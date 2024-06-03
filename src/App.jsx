@@ -1,13 +1,12 @@
-import { Frame_1, Frame_2, Frame_3, Frame_4 } from "./pages";
-const App = () => {
-  return (
-    <div>
-      <Frame_1 />
-      <Frame_2 />
-      <Frame_3 />
-      <Frame_4 />
-    </div>
-  );
-};
+import { Outlet } from "react-router-dom"
+function App() {
 
-export default App;
+  return (
+    <>
+    <Outlet/>
+    </>
+  )
+}
+
+export default App
+import React from 'react'
